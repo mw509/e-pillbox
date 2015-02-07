@@ -1,12 +1,3 @@
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=194576450615735&version=v2.0";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
 <?php
 # Page Description
 # Processing Page for collecting user querries and requesting information from FDA APIs
@@ -89,8 +80,6 @@ if($PCode != NULL){
 	
 print
 <<<HTML
-<div class="fb-share-button" data-href="http://www.searchengineinc.info" data-layout="link"></div>
-
 <h2>Displaying Details for Product Code $ProductCode</h2>
 <table>
 	<tr>
@@ -106,7 +95,12 @@ print
 		<td><b>Size</b></td><td>$Size</td>
 	</tr>
 </table>
-
+<br />
+<br />
+<b>Share This Information</br>
+<a href="https://www.facebook.com/sharer/sharer.php?app_id=194576450615735&u=http%3A%2F%2Fwww.searchengineinc.info%2F&display=popup&ref=plugin" target="_blank"><img src="images/fb.jpg" width="50px" /></a>
+<a href="#" target="_blank"><img src="images/t.jpg" width="50px" /></a>
+<a href="#" target="_blank"><img src="images/e.jpg" width="50px" /></a>
 HTML;
 	}
 
