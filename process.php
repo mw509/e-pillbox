@@ -1,3 +1,12 @@
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=194576450615735&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <?php
 # Page Description
 # Processing Page for collecting user querries and requesting information from FDA APIs
@@ -95,6 +104,10 @@ print
 		<td><b>Size</b></td><td>$Size</td>
 	</tr>
 </table>
+<br />
+<a href="#"> Send a report/review about this Pill</a>
+<br />
+<a href="#"> Find a store near you</a>
 <br />
 <br />
 <b>Share This Information</br>
