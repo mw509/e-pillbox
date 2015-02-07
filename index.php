@@ -16,11 +16,6 @@
 				// show that something is loading
 				$('#response').html("<b>Loading response...</b>");
 				 
-				/*
-				 * 'post_receiver.php' - where you will pass the form data
-				 * $(this).serialize() - to easily read form data
-				 * function(data){... - data contains the response from post_receiver.php
-				 */
 				$.ajax({
 				    type: 'POST',
 				    url: 'process.php', 
@@ -34,7 +29,7 @@
 				})
 				.fail(function() {
 				 
-				    // just in case posting your form failed
+				    // just in case posting failed
 				    alert( "Posting failed." );
 				     
 				});
@@ -80,12 +75,7 @@ $(document).ready(function(){
      
         // show that something is loading
         $('#response').html("<b>Searching Database...</b>");
-         
-        /*
-         * 'post_receiver.php' - where you will pass the form data
-         * $(this).serialize() - to easily read form data
-         * function(data){... - data contains the response from post_receiver.php
-         */
+
         $.ajax({
             type: 'POST',
             url: 'process.php', 
@@ -99,7 +89,7 @@ $(document).ready(function(){
         })
         .fail(function() {
          
-            // just in case posting your form failed
+            // just in case posting failed
             alert( "Posting failed." );
              
         });
@@ -115,11 +105,6 @@ function getMedDetails(prodCode)
 	// show that something is loading
         showDialog("<b>Getting Pill Details...</b>");
          
-        /*
-         * 'post_receiver.php' - where you will pass the form data
-         * $(this).serialize() - to easily read form data
-         * function(data){... - data contains the response from post_receiver.php
-         */
         $.ajax({
             type: 'POST',
             url: 'process.php', 
@@ -131,7 +116,7 @@ function getMedDetails(prodCode)
             updateDialog(data);
         })
         .fail(function() {
-            // just in case posting your form failed
+            // just in case posting failed
             alert( "Posting failed." );
         });
  
